@@ -26,11 +26,17 @@
     "plugins": [
       "expo-router",
       [
-        "expo-splash-screen",
+        "expo-image-picker",
         {
-          "backgroundColor": "#208AEF",
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "cameraPermission": "Allow Photo Journal to take photographs for your journal.",
+          "photosPermission": "Allow Photo Journal to select photographs from your library.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Photo Journal to access your location for geotagging your photos."
         }
       ]
     ],
